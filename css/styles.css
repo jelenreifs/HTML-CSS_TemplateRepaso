@@ -245,15 +245,34 @@ footer .copyright {
   justify-content: space-between;
 }
 
-@media (max-width: 1900px) {
+@media (max-width: 768px) {
+  body {
+    width: 100%;
+  }
+
   .area-services,
   .area-players,
   .area-latestWork,
   footer .footer-enlaces {
     flex-direction: column;
+    width: 100%;
+  }
+
+  .area-services > div {
+    width: 94%;
+  }
+
+  .player > p {
+    width: 94%;
   }
 
   .area-latestWork {
     width: 100%;
+  }
+
+  separador {
+    color: #f1f1f1;
+    margin: 60px 0 20px;
+    width: auto;
   }
 }
